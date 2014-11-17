@@ -7,4 +7,4 @@ Usage
 -----
 
 * Build: `docker build -t dockmoe/ssl-proxy .`
-* Run: `docker run -d -name ssl-proxy --link some_http_service:http -p 443:443 dockmoe/ssl-proxy nginx -g "daemon off;"`
+* Run: `docker run -d --name ssl-proxy --link some_http_service:http -p 443:443 dockmoe/ssl-proxy nginx -g "daemon off;"`
