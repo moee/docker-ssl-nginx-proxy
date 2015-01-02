@@ -16,7 +16,7 @@ server {
     ssl_prefer_server_ciphers on;
 
     location / {
-        try_files $uri $uri/ =404;
         proxy_pass http://http:80;     
+        proxy_set_header Host $host;
     }
 }
